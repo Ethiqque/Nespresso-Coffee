@@ -1,0 +1,100 @@
+plugins {
+    id 'org.springframework.boot' version '3.3.0'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id 'java'
+    id 'jacoco'
+}
+
+group = 'com.nespresso-project'
+version = '0.0.1'
+sourceCompatibility = '21'
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.maven.apache.org/maven2" }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.apache.logging.log4j:log4j-bom:2.23.1"
+        mavenBom "org.springframework.ai:spring-ai-bom:1.0.0-SNAPSHOT"
+    }
+}
+
+dependencies {
+    // Spring Boot
+    implementation "org.springframework.boot:spring-boot-starter-web:3.3.0"
+    implementation "org.springframework.boot:spring-boot-starter-security"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+    implementation "org.springframework.boot:spring-boot-starter-cache"
+    implementation "org.springframework.boot:spring-boot-starter-mail:3.3.0"
+    implementation "org.springframework.retry:spring-retry:2.0.6"
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:3.2.0'
+
+    // Spring Cloud AWS
+    implementation "org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE"
+
+    // AI Spring Starter
+    implementation "org.springframework.ai:spring-ai-openai-spring-boot-starter"
+
+    // Prometheus and Actuator for monitoring
+    implementation 'io.micrometer:micrometer-registry-prometheus'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // JWT
+    implementation "io.jsonwebtoken:jjwt-api:0.11.5"
+    implementation "io.jsonwebtoken:jjwt-impl:0.11.5"
+    implementation "io.jsonwebtoken:jjwt-jackson:0.11.5"
+
+    // Jackson & Logstash Encoder
+    implementation "com.fasterxml.jackson.core:jackson-core:2.15.2"
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.15.2"
+    implementation "net.logstash.logback:logstash-logback-encoder:7.4"
+
+    // Database
+    implementation "org.postgresql:postgresql:42.7.3"
+    implementation "org.liquibase:liquibase-core:4.29.1"
+
+    // Other libraries
+    implementation "com.stripe:stripe-java:26.9.0"
+    implementation "org.apache.commons:commons-lang3:3.14.0"
+    implementation "org.mapstruct:mapstruct:1.6.0"
+    implementation "org.projectlombok:lombok:1.18.34"
+
+    // Redis
+    implementation "org.springframework.boot:spring-boot-starter-data-redis:3.3.0"
+
+    // Swagger and OpenAPI
+    implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0"
+
+    // Google OAuth
+    implementation "com.google.auth:google-auth-library-oauth2-http:1.23.0"
+    implementation "com.google.api-client:google-api-client:2.6.0"
+
+    // Test Dependencies
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.11.0"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:5.11.0"
+    testImplementation "io.rest-assured:rest-assured:5.3.0"
+    testImplementation "org.instancio:instancio-junit:3.0.1"
+    testImplementation "org.testcontainers:testcontainers:1.19.8"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jacoco {
+    toolVersion = "0.8.12"
+}
+
+bootJar {
+    archiveBaseName = 'nespresso'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
