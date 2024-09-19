@@ -1,7 +1,7 @@
 package com.nespresso.user.api;
 
-import com.nespresso.icedlatte.user.exception.InvalidOldPasswordException;
-import com.nespresso.icedlatte.user.repository.UserRepository;
+import com.nespresso.user.exception.InvalidOldPasswordException;
+import com.nespresso.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
