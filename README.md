@@ -1,10 +1,8 @@
 # Nespresso-Coffee
 
-## Overview
+![Nespresso Coffee Machine](https://assets.wfcdn.com/im/30413596/c_crop-h600-w1600%5Ecompr-r85/1030/103084488/picture_desktop_103084488.jpg)
 
 **Nespresso-Coffee (Backend)** is a sandbox project aimed at developing a modern marketplace for selling coffee. The project serves as a platform for enhancing technical skills through hands-on development of a full-stack application in a real-world context.
-
-🟥 **Note:** This project operates without financial backing or monetary compensation, driven purely by a passion for technology and learning.
 
 ## Technology Stack
 
@@ -22,3 +20,5 @@
 - **Validation:** Javax Validation.
 
 This stack supports building a secure, scalable, and maintainable marketplace platform, fostering continuous learning and innovation in software development.
+
+![Nespresso Coffee Machine](https://www.nespresso.com/ecom/medias/sys_master/public/12885466513438/DSC02262jpg.jpg)
