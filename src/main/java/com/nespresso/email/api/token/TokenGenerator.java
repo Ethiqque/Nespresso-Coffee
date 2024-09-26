@@ -1,6 +1,6 @@
-package com.zufar.icedlatte.email.api.token;
+package com.nespresso.email.api.token;
 
-import com.zufar.icedlatte.email.exception.IncorrectTokenFormatException;
+import com.nespresso.email.exception.IncorrectTokenFormatException;
 import org.springframework.stereotype.Component;
 
 import java.security.SecureRandom;

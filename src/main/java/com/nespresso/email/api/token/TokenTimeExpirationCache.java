@@ -1,8 +1,8 @@
-package com.zufar.icedlatte.email.api.token;
+package com.nespresso.email.api.token;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import com.zufar.icedlatte.email.exception.TimeTokenException;
+import com.nespresso.email.exception.TimeTokenException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 

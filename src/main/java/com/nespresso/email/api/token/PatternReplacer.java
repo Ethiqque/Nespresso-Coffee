@@ -1,4 +1,4 @@
-package com.zufar.icedlatte.email.api.token;
+package com.nespresso.email.api.token;
 
 import java.util.ArrayList;
 import java.util.List;

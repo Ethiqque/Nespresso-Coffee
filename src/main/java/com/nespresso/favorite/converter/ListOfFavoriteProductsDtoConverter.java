@@ -2,7 +2,6 @@ package com.nespresso.favorite.converter;
 
 import com.nespresso.favorite.dto.FavoriteItemDto;
 import com.nespresso.favorite.dto.FavoriteListDto;
-import com.nespresso.openapi.dto.ListOfFavoriteProductsDto;
 import com.nespresso.openapi.dto.ProductInfoDto;
 import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;

@@ -1,10 +1,10 @@
-package com.zufar.icedlatte.email.api.token;
+package com.nespresso.email.api.token;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
-import com.zufar.icedlatte.email.exception.IncorrectTokenException;
+import com.nespresso.email.exception.IncorrectTokenException;
 
-import com.zufar.icedlatte.openapi.dto.UserRegistrationRequest;
+import com.nespresso.openapi.dto.UserRegistrationRequest;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 

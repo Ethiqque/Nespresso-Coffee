@@ -1,7 +1,7 @@
-package com.zufar.icedlatte.email.api.token;
+package com.nespresso.email.api.token;
 
-import com.zufar.icedlatte.openapi.dto.ConfirmEmailRequest;
-import com.zufar.icedlatte.openapi.dto.UserRegistrationRequest;
+import com.nespresso.openapi.dto.ConfirmEmailRequest;
+import com.nespresso.openapi.dto.UserRegistrationRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
