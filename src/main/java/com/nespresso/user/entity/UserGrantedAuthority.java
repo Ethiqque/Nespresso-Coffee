@@ -61,4 +61,12 @@ public class UserGrantedAuthority implements GrantedAuthority {
     public int hashCode() {
         return Objects.hash(authority);
     }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
+    }
+
+    public void setUserAuthorityId(UUID userAuthorityId) {
+        this.userAuthorityId = userAuthorityId;
+    }
 }

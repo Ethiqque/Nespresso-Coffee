@@ -50,4 +50,8 @@ public class OrderItem {
                 "id = " + id +
                 '}';
     }
+
+    public void setOrderId(UUID orderId) {
+        this.orderId = orderId;
+    }
 }

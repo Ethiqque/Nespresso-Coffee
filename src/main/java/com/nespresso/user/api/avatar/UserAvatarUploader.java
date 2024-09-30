@@ -1,9 +1,9 @@
-package com.nespresso.icedlatte.user.api.avatar;
+package com.nespresso.user.api.avatar;
 
-import com.nespresso.icedlatte.filestorage.filemetadata.FileMetadataDeleter;
-import com.nespresso.icedlatte.filestorage.filemetadata.FileMetadataSaver;
-import com.nespresso.icedlatte.filestorage.file.FileUploader;
-import com.nespresso.icedlatte.filestorage.dto.FileMetadataDto;
+import com.nespresso.filestorage.filemetadata.FileMetadataDeleter;
+import com.nespresso.filestorage.filemetadata.FileMetadataSaver;
+import com.nespresso.filestorage.file.FileUploader;
+import com.nespresso.filestorage.dto.FileMetadataDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

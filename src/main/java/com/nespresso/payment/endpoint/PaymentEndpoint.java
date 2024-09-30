@@ -3,6 +3,7 @@ package com.nespresso.payment.endpoint;
 import com.nespresso.openapi.dto.PaymentConfirmationEmail;
 import com.nespresso.openapi.dto.SessionWithClientSecretDto;
 import com.nespresso.payment.api.PaymentProcessor;
+import com.nespresso.openapi.payment.api.PaymentApi;
 import com.nespresso.payment.api.RedirectEventProcessor;
 import com.nespresso.payment.api.WebhookEventProcessor;
 import com.nespresso.payment.exception.StripeSessionRetrievalException;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping(value = PaymentEndpoint.PAYMENT_URL)
-public class PaymentEndpoint implements com.nespresso.openapi.payment.api.PaymentApi {
+public class PaymentEndpoint implements PaymentApi {
 
     public static final String PAYMENT_URL = "/api/v1/payment";
 

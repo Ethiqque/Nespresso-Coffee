@@ -83,6 +83,16 @@ public class UserEntity implements UserDetails {
         return email;
     }
 
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public Set<UserGrantedAuthority> getAuthorities() {
+        return authorities;
+    }
+
     public void addAuthority(UserGrantedAuthority authority) {
         if (this.authorities == null) {
             this.authorities = new HashSet<>();

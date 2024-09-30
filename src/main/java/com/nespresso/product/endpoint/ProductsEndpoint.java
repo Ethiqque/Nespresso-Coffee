@@ -5,6 +5,7 @@ import com.nespresso.openapi.dto.ProductIdsDto;
 import com.nespresso.openapi.dto.ProductInfoDto;
 import com.nespresso.openapi.dto.ProductListWithPaginationInfoDto;
 import com.nespresso.openapi.dto.SellersDto;
+import com.nespresso.openapi.product.review.api.ProductApi;
 import com.nespresso.product.api.ProductsProvider;
 import com.nespresso.product.api.SingleProductProvider;
 import com.nespresso.product.validator.GetProductsRequestValidator;
@@ -34,7 +35,7 @@ import static com.nespresso.common.util.Utils.createPageableObject;
 @RequiredArgsConstructor
 @Validated
 @RequestMapping(value = ProductsEndpoint.PRODUCTS_URL)
-public class ProductsEndpoint implements com.nespresso.openapi.product.api.ProductApi {
+public class ProductsEndpoint implements ProductApi {
 
     public static final String PRODUCTS_URL = "/api/v1/products";
 

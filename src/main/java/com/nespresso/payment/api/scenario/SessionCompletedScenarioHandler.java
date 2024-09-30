@@ -1,9 +1,9 @@
 package com.nespresso.payment.api.scenario;
 
 import com.stripe.model.checkout.Session;
-import com.zufar.icedlatte.email.sender.PaymentEmailConfirmation;
-import com.zufar.icedlatte.order.api.OrderCreator;
-import com.zufar.icedlatte.payment.enums.StripeSessionConstants;
+import com.nespresso.email.sender.PaymentEmailConfirmation;
+import com.nespresso.order.api.OrderCreator;
+import com.nespresso.payment.enums.StripeSessionConstants;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

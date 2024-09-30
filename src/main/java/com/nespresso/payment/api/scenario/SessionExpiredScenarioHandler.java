@@ -1,12 +1,12 @@
 package com.nespresso.payment.api.scenario;
 
 import com.stripe.model.checkout.Session;
-import com.zufar.icedlatte.payment.enums.StripeSessionConstants;
+import com.nespresso.payment.enums.StripeSessionConstants;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import static com.zufar.icedlatte.payment.enums.StripeSessionStatus.SESSION_IS_EXPIRED;
+import static com.nespresso.payment.enums.StripeSessionStatus.SESSION_IS_EXPIRED;
 
 @Slf4j
 @RequiredArgsConstructor

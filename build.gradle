@@ -68,6 +68,8 @@ dependencies {
 
     // Swagger and OpenAPI
     implementation "org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0"
+    implementation 'org.slf4j:slf4j-api:2.0.5'
+
 
     // Google OAuth
     implementation "com.google.auth:google-auth-library-oauth2-http:1.23.0"

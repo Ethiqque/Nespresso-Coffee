@@ -10,10 +10,13 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service
-@RequiredArgsConstructor
 public class SecurityPrincipalProvider {
 
     private final UserDtoConverter userDtoConverter;
+
+    public SecurityPrincipalProvider(UserDtoConverter userDtoConverter) {
+        this.userDtoConverter = userDtoConverter;
+    }
 
     public UserDto get() {
         UserEntity userEntity = (UserEntity) SecurityContextHolder

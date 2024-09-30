@@ -1,6 +1,6 @@
-package com.nespresso.icedlatte.user.api.avatar;
+package com.nespresso.user.api.avatar;
 
-import com.nespresso.icedlatte.filestorage.file.FileProvider;
+import com.nespresso.filestorage.file.FileProvider;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

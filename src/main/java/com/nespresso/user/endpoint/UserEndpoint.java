@@ -37,7 +37,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @Validated
 @RequestMapping(value = UserEndpoint.API_CUSTOMERS)
-public class UserEndpoint implements com.nespresso.icedlatte.openapi.user.api.UserApi {
+public class UserEndpoint implements UserApi {
 
     public static final String API_CUSTOMERS = "/api/v1/users";
 
